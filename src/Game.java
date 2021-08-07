@@ -205,6 +205,18 @@ public class Game
 	//}
 	}
 	
+	// For same number card:-
+	public int sameNumber()
+	{
+
+		for (int i=0;i<hand.length-1;i++){
+			if (hand[i+1].rank == hand[i].rank) 
+				return 1;
+		}
+		
+	return 0;
+	}
+
 	
 	// checks for a straight flush
 	public int straightFlush()
